@@ -31,13 +31,14 @@ class App extends Component {
 	}
 	handleSubmit = (event) => {
 		event.preventDefault();
-		Axios.get(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${this.state.ing1},+${this.state.ing2}&number=5&apiKey=b8cf9c64b44b4e76b8fcfae4cc3f45f7 `)
+		Axios.get(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${this.state.ing1},+${this.state.ing2}&number=5&apiKey=b8cf9c64b44b4e76b8fcfae4cc3f45f7`)
 			.then(response => {
 				this.setState({ results: response.data })
 				console.log(this.state.results)
 			})
 		// .catch(console.log("err"))
 	}
+
 
 	render() {
 		return (
