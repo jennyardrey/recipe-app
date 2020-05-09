@@ -1,0 +1,48 @@
+.header {
+	background-image: url("../images/fridgeEDIT.jpg");
+	width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover; 
+	color: #FFF;
+
+}
+h1 {
+	margin: auto;
+	font-size: 100px;
+	font-family: Andale Mono, AndaleMono, monospace;
+}
+#chevron {
+	font-size: 30px;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	right: 45vw;
+}
+
+
+.header-content {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 50vh);
+	justify-content: space-around;    
+}
+.title {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	align-self: start;
+	justify-self: right;
+}
+
+.desc1 {
+	text-align: right;
+	grid-column-start: 2;
+	grid-row-start: 2;
+	align-self: end;
+	padding-bottom: 100px;
+	padding-right: 30px;
+	font-family: Andale Mono, AndaleMono, monospace;
+	 line-height: 2.5;
+}

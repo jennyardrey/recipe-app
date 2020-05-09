@@ -45,11 +45,11 @@ class Results extends Component {
 				{this.props.recipe.missedIngredients.map(ingredient => {
 					return <div>{ingredient.name}</div>
 				})}
-				{this.state.popup === false ? <button onClick={this.seeMore}>Show More...</button> : <button onClick={this.seeLess}>Show Less...</button>}
+				{this.state.popup === false ? <button onClick={this.seeMore}>Show instructions</button> : <button onClick={this.seeLess}>Hide instructions</button>}
 
 
 
-				{this.state.popup === true ? <RecipeDetails /> : null}
+				{this.state.popup === true ? <RecipeDetails details={this.state.recipeDetails} /> : null}
 			</div>
 		);
 

@@ -4,7 +4,7 @@ const RecipeDetails = (props) => {
 
 	return (
 		<div>
-			<p>here are the details</p>
+			<p>{props.details.instructions}</p>
 		</div>
 	);
 }

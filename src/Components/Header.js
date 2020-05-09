@@ -1,11 +1,25 @@
 import React from 'react';
+import "../styles/Header.css"
+import { Link } from "react-scroll";
+import arrow from "../images/arrowwhite.jpg"
 
 const Header = () => {
 	return (
-		<div>
-			<h1>What's in the fridge...?</h1>
-			<p>Tell us what you have in, and we will give you some recipe ideas.</p>
-			<p>To start, enter some ingredients below.</p>
+		<div className="header">
+			<div className="header-content">
+				<h1 className="title">What's in the fridge...?</h1>
+				<h2 className="desc1">Tell us what you have in, and we will give you some recipe ideas.</h2>
+				<Link
+					activeClass="active"
+					to="ingredients-input"
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={1000}
+				>
+					<i id="chevron" class="fas fa-chevron-down"></i>
+				</Link>
+			</div>
 		</div>
 	);
 }

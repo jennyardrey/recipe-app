@@ -42,7 +42,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="app">
 				<Header />
 				<IngredientsForm submitForm={this.handleSubmit} handleChange1={this.handleChange1} handleChange2={this.handleChange2} />
 				<div>
