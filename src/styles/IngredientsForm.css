@@ -1,3 +1,49 @@
 #ingredients-input {
+	  margin: 0 auto;
 	height: 100vh;
+}
+
+.ingredients-form {
+	display: flex;
+	flex-direction: column;
+	    align-items: center;
+    padding: auto auto auto auto;
+
+}
+.desc2 {
+		padding-right: 30px;
+	font-family: Andale Mono, AndaleMono, monospace;
+	 line-height: 2.5;
+	 font-size: 30px;
+	 padding: 20px;
+	 text-align: center;
+}
+.ingredients-input {
+	padding: 10px;
+	margin: 20px;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	border: 1px solid darkgray;
+	border-radius: 5px;
+}
+
+#submit-btn {
+	cursor: pointer;
+	background-color: darkgray;
+	 border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.results-scroll {
+	cursor: pointer;
+	font-family: Andale Mono, AndaleMono, monospace;
+	 line-height: 2.5;
+	 font-size: 30px;
+	text-align: center;
+	padding-top: 30px;
 }

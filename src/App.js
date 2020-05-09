@@ -11,6 +11,8 @@ class App extends Component {
 		this.state = {
 			ing1: "",
 			ing2: "",
+			ing3: "",
+			ing4: "",
 			ingredients: [],
 			results: []
 		}
@@ -20,14 +22,24 @@ class App extends Component {
 		this.setState({
 			ing1: event.target.value
 		})
-		console.log(this.state.ing1)
 	}
 	handleChange2 = (event) => {
 		event.preventDefault();
 		this.setState({
 			ing2: event.target.value
 		})
-		console.log(this.state.ing2)
+	}
+	handleChange3 = (event) => {
+		event.preventDefault();
+		this.setState({
+			ing3: event.target.value
+		})
+	}
+	handleChange4 = (event) => {
+		event.preventDefault();
+		this.setState({
+			ing4: event.target.value
+		})
 	}
 	handleSubmit = (event) => {
 		event.preventDefault();
@@ -44,7 +56,7 @@ class App extends Component {
 		return (
 			<div className="app">
 				<Header />
-				<IngredientsForm submitForm={this.handleSubmit} handleChange1={this.handleChange1} handleChange2={this.handleChange2} />
+				<IngredientsForm results={this.state.results} submitForm={this.handleSubmit} handleChange1={this.handleChange1} handleChange2={this.handleChange2} />
 				<div>
 					{this.state.results && this.state.results.length > 0 ? this.state.results.map(result => (
 						<Results recipe={result} />

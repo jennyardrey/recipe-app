@@ -1,7 +1,6 @@
 import React from 'react';
 import "../styles/Header.css"
 import { Link } from "react-scroll";
-import arrow from "../images/arrowwhite.jpg"
 
 const Header = () => {
 	return (

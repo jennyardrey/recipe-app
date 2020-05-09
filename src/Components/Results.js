@@ -33,7 +33,7 @@ class Results extends Component {
 
 	render() {
 		return (
-			<div>
+			<div id="results">
 				<h2>You could make...</h2>
 				<img src={this.props.recipe.image} alt="recipe" />
 				<p>{this.props.recipe.title}</p>
