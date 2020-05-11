@@ -1,6 +1,6 @@
 .header {
 	background-image: url("../images/fridgeEDIT.jpg");
-	width: 100vw;
+	max-width: 100vw;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,4 +45,11 @@ h1 {
 	padding-right: 30px;
 	font-family: Andale Mono, AndaleMono, monospace;
 	 line-height: 2.5;
+}
+
+@media only screen and (max-width: 400px) {
+	h1 {
+		font-size: 30px;
+	}
+	
 }

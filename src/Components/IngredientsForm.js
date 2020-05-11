@@ -12,7 +12,7 @@ const IngredientsForm = (props) => {
 				<input onChange={props.handleChange3} type="text" className="ingredients-input" placeholder="Type ingredients..."></input>
 				<input onChange={props.handleChange4} type="text" className="ingredients-input" placeholder="Type ingredients..."></input>
 
-				<button id="submit-btn" type="submit">Generate recipes...</button>
+				<button id="submit-btn" type="submit">Click here to generate recipes...</button>
 
 			</form>
 			{props.results.length > 0 ?
@@ -24,7 +24,7 @@ const IngredientsForm = (props) => {
 					offset={0}
 					duration={1000}
 				>
-					<div className="results-scroll">...see your results!</div>
+					<div className="results-scroll">...click here to see your results!</div>
 				</Link> : <div className="results-scroll">Awaiting ingredients...</div>}
 
 

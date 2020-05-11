@@ -47,3 +47,44 @@
 	text-align: center;
 	padding-top: 30px;
 }
+
+@media only screen and (max-width: 400px) {
+
+.desc2 {
+	font-size: 20px;
+}
+	#ingredients-input {
+			font-size: 20px;
+	  margin: 0 auto;
+	max-height: 100vh;
+}
+.ingredients-input {
+	padding: 10px;
+	margin: 10px;
+	width: 100px;
+	height: 20px;
+	font-size: 10px;
+	border: 1px solid darkgray;
+	border-radius: 5px;
+}
+.results-scroll {
+	cursor: pointer;
+	font-family: Andale Mono, AndaleMono, monospace;
+	 font-size: 16px;
+	text-align: center;
+	padding-top: 50px;
+}
+#submit-btn {
+	cursor: pointer;
+	background-color: darkgray;
+	 border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	font-size: 16px;
+margin-top: 50px;
+}
+	
+}

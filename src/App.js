@@ -57,7 +57,7 @@ class App extends Component {
 			<div className="app">
 				<Header />
 				<IngredientsForm results={this.state.results} submitForm={this.handleSubmit} handleChange1={this.handleChange1} handleChange2={this.handleChange2} />
-				<div>
+				<div className="results-cards">
 					{this.state.results && this.state.results.length > 0 ? this.state.results.map(result => (
 						<Results recipe={result} />
 					)) : <div className="error">Error</div>}

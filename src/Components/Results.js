@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios'
 import RecipeDetails from './RecipeDetails';
+import "../styles/Results.css"
 
 class Results extends Component {
 	constructor(props) {
@@ -20,6 +21,7 @@ class Results extends Component {
 			})
 	}
 	seeMore = () => {
+
 		this.setState({
 			popup: true
 		})
@@ -45,11 +47,11 @@ class Results extends Component {
 				{this.props.recipe.missedIngredients.map(ingredient => {
 					return <div>{ingredient.name}</div>
 				})}
-				{this.state.popup === false ? <button onClick={this.seeMore}>Show instructions</button> : <button onClick={this.seeLess}>Hide instructions</button>}
+				{this.state.popup === false ? <button onClick={this.seeMore}>Show instructions</button> : null}
 
 
 
-				{this.state.popup === true ? <RecipeDetails details={this.state.recipeDetails} /> : null}
+				{this.state.popup === true ? <RecipeDetails seeLess={this.seeLess} details={this.state.recipeDetails} /> : null}
 			</div>
 		);
 

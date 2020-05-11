@@ -1,0 +1,21 @@
+#results {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: fit-content;
+	margin: 20px;
+	padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+	img {
+		width: 200px;
+	}
+	#results {
+	
+	font-size: 16px;
+	margin: 20px;
+	padding: 20px;
+}
+}
