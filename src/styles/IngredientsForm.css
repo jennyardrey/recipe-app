@@ -1,3 +1,13 @@
+.diet-btns {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.diet-select {
+	display: flex;
+	flex-direction: row;
+}
+
 #ingredients-input {
 	  margin: 0 auto;
 	height: 100vh;
@@ -13,9 +23,9 @@
 .desc2 {
 		padding-right: 30px;
 	font-family: Andale Mono, AndaleMono, monospace;
-	 line-height: 2.5;
+	 /* line-height: 2.5; */
 	 font-size: 30px;
-	 padding: 20px;
+	 /* padding: 20px; */
 	 text-align: center;
 }
 .ingredients-input {

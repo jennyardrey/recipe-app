@@ -6,11 +6,11 @@ import "../styles/Results.css"
 class Results extends Component {
 	constructor(props) {
 		super(props);
-
+		this.image = "https://spoonacular.com/recipeImages/" + this.props.recipe.image;
 		this.state = {
 			recipeId: this.props.recipe.id,
 			recipeDetails: [],
-			popup: false
+			popup: false,
 		}
 
 	}
@@ -18,6 +18,7 @@ class Results extends Component {
 		Axios.get(`https://api.spoonacular.com/recipes/${this.state.recipeId}/information?includeNutrition=false&apiKey=b8cf9c64b44b4e76b8fcfae4cc3f45f7`)
 			.then(response => {
 				this.setState({ recipeDetails: response.data })
+				console.log.apply(this.state.recipeDetails)
 			})
 	}
 	seeMore = () => {
@@ -36,18 +37,13 @@ class Results extends Component {
 	render() {
 		return (
 			<div id="results">
-				<h2>You could make...</h2>
-				<img src={this.props.recipe.image} alt="recipe" />
-				<p>{this.props.recipe.title}</p>
-				<h3>You have...</h3>
-				{this.props.recipe.usedIngredients.map(ingredient => {
-					return <div>{ingredient.name}</div>
-				})}
-				<h3>You need...</h3>
-				{this.props.recipe.missedIngredients.map(ingredient => {
-					return <div>{ingredient.name}</div>
-				})}
-				{this.state.popup === false ? <button onClick={this.seeMore}>Show instructions</button> : null}
+
+				<img src={this.image} alt="recipe" />
+				<h2>{this.props.recipe.title}</h2>
+				{/* <div>
+					{this.state.recipeDetails.map(ingredient => { return <div>{ingredient.extendedIngredients.name} </div> })}
+				</div> */}
+				{this.state.popup === false ? <button onClick={this.seeMore}>More info</button> : null}
 
 
 
