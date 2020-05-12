@@ -70,7 +70,7 @@ class App extends Component {
 				<div className="results-cards">
 					{this.state.results && this.state.results.length > 0 ? this.state.results.map(result => (
 						<Results recipe={result} />
-					)) : <div className="error">Error</div>}
+					)) : <div className="error"></div>}
 				</div>
 			</div>
 		);
