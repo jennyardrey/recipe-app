@@ -43,7 +43,7 @@ const IngredientsForm = (props) => {
 					duration={1000}
 				>
 					<div className="results-scroll">...click here to see your results!</div>
-				</Link> : <div className="results-scroll">Awaiting ingredients</div>}
+				</Link> : <div id="waiting" className="results-scroll">Awaiting ingredients</div>}
 
 
 		</div>

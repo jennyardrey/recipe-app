@@ -57,7 +57,7 @@
 	text-align: center;
 	padding-top: 20px;
 }
-.results-scroll:after {
+#waiting:after {
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
