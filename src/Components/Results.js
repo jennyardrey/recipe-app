@@ -38,12 +38,12 @@ class Results extends Component {
 		return (
 			<div id="results">
 
-				<img src={this.image} alt="recipe" />
+				<img id="recipe-img" src={this.image} alt="recipe" />
 				<h2>{this.props.recipe.title}</h2>
 				{/* <div>
 					{this.state.recipeDetails.map(ingredient => { return <div>{ingredient.extendedIngredients.name} </div> })}
 				</div> */}
-				{this.state.popup === false ? <button onClick={this.seeMore}>More info</button> : null}
+				{this.state.popup === false ? <button className="more-info-btn" onClick={this.seeMore}>More info</button> : null}
 
 
 

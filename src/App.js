@@ -66,11 +66,13 @@ class App extends Component {
 			<div className="app">
 				<Header />
 				<IngredientsForm results={this.state.results} submitForm={this.handleSubmit} handleChange1={this.handleChange1} handleChange2={this.handleChange2} handleChange3={this.handleChange3} handleChange4={this.handleChange4} handleDiet={this.handleDiet} />
-				<h2> You could make...</h2>
-				<div className="results-cards">
-					{this.state.results && this.state.results.length > 0 ? this.state.results.map(result => (
-						<Results recipe={result} />
-					)) : <div className="error"></div>}
+				<div className="results">
+					<h2 className="you-could"> You could make...</h2>
+					<div className="results-cards">
+						{this.state.results && this.state.results.length > 0 ? this.state.results.map(result => (
+							<Results recipe={result} />
+						)) : <div className="error"></div>}
+					</div>
 				</div>
 			</div>
 		);
