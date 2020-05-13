@@ -13,8 +13,8 @@ const RecipeDetails = (props) => {
 				<div>
 					{props.details.diets.map(diet => { return <div>{diet} <i class="fas fa-check"></i></div> })}
 				</div>
-				<div>
-					<h3>Instructions:</h3><span>{props.details.instructions}</span></div>
+
+				{/* <h3>Instructions:</h3><span className="instructions">{props.details.instructions}</span> */}
 				<a href={props.details.sourceUrl} alt="recipe link" target="_blank">Click here to open recipe in a new tab</a>
 			</div>
 		</div >

@@ -8,16 +8,18 @@ const Header = () => {
 			<div className="header-content">
 				<h1 className="title">What's in the fridge...?</h1>
 				<h2 className="desc1">Tell us what you have in, and we will give you some recipe ideas.</h2>
-				<Link
-					activeClass="active"
-					to="ingredients-input"
-					spy={true}
-					smooth={true}
-					offset={0}
-					duration={1000}
-				>
-					<i id="chevron" class="fas fa-chevron-down"></i>
-				</Link>
+				<div className="scroll-link">
+					<Link
+						activeClass="active"
+						to="ingredients-input"
+						spy={true}
+						smooth={true}
+						offset={0}
+						duration={1000}
+					>
+						<i id="chevron" class="fas fa-chevron-down"></i>
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
