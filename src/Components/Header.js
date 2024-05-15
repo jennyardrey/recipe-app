@@ -17,7 +17,7 @@ const Header = () => {
 						offset={0}
 						duration={1000}
 					>
-						<i id="chevron" class="fas fa-chevron-down"></i>
+						<i id="chevron" className="fas fa-chevron-down"></i>
 					</Link>
 				</div>
 			</div>
