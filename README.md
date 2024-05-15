@@ -1,17 +1,27 @@
 # What's in the Fridge?
 
 What's in the Fridge? is a React application that helps you find recipes based on the ingredients you have at home. Simply input four ingredients, and the app will query the Spoonacular API to provide you with a list of recipes containing those ingredients.
+This project was created during COVID lockdown, when I was picking up a veg box from a local veg stall.
 
 ## Live App
 You can view the live app [here](https://whats-in-the-fridge.vercel.app/).
 
 ## Features
 - Input up to four ingredients
-- Fetch recipes from the Spoonacular API based on the provided ingredients
+- Fetch recipes based on the provided ingredients
 - Display a list of recipes including titles, images, and links to full recipes
 
 ## Project Background
-This project was developed in 2020 at the start of my coding journey, before I gained professional experience as a developer. It reflects my early skills and understanding of React and API integration. Since then, I have not updated or refactored the code to reflect my current abilities.
+This project was developed in 2020 at the start of my coding journey, before I had any professional experience as a developer. It reflects my early skills and understanding of React and API integration. I may do an upgrade at some point but for now it remains a time capsule of 2020 React. Saying that, i have identified some areas for improvement in the future.
+
+## Future Enhancements
+In the future, I would like to refactor and add the following features:
+
+- Refactor the codebase to use modern React hooks and functional components.
+- Improve error handling and loading states for better user experience.
+- Add user authentication to save favorite recipes.
+- Implement a more advanced search feature with filters (e.g., dietary restrictions, cuisine types).
+- Enhance the UI/UX with a more modern design and responsive layout.
 
 ## Getting Started
 

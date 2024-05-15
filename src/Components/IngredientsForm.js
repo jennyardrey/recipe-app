@@ -33,19 +33,6 @@ const IngredientsForm = (props) => {
 				<button id="submit-btn" type="submit">Click here to generate recipes...</button>
 
 			</form>
-			{props.results.length > 0 ?
-				<Link
-					activeClass="active"
-					to="results"
-					spy={true}
-					smooth={true}
-					offset={0}
-					duration={1000}
-				>
-					<div className="results-scroll">...click here to see your results!</div>
-				</Link> : <div id="waiting" className="results-scroll">Awaiting ingredients</div>}
-
-
 		</div>
 	);
 }
