@@ -19,7 +19,7 @@ const RecipeDetails = (props) => {
 					<p>{props.details.extendedIngredients.map(ing => { return <div>{ing.name}</div> })}</p>
 
 					<div className="ext-link">
-						<a href={props.details.sourceUrl} alt="recipe link" target="_blank">Click here to go to recipe</a>
+						<a href={props.details.sourceUrl} alt="recipe link" rel="noopener noreferrer" target="_blank">Click here to go to recipe</a>
 					</div>
 				</div>
 			</div>
